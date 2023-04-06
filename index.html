@@ -35,21 +35,26 @@
   <!-- Styles e Links -->
   <base href="/" target="_self">
 
-  <link rel="icon" type="image/png" sizes="192x192" href="./config/assets/gc/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./config/assets/gc/android-chrome-512x512.png">
-  <link rel="shortcut icon" href="./config/assets/gc/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="./config/assets/gc/logo.png">
-  <link rel="shortcut icon" href="./config/assets/gc/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="shortcut icon" href="./config/assets/gc/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="./config/assets/gc/apple-touch-icon.png" type="image/png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./config/assets/gcs/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./config/assets/gcs/android-chrome-512x512.png">
+  <link rel="shortcut icon" href="./config/assets/gcs/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./config/assets/gcs/logo.png">
+  <link rel="shortcut icon" href="./config/assets/gcs/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="./config/assets/gcs/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="./config/assets/gcs/apple-touch.png" type="image/png">
 
   <link rel="stylesheet" href="./config/public/styles/global.css">
+  <link rel="stylesheet" href="./config/public/styles/soon.css">
 </head>
-<body class="home" id="home">
+<body class="_body _soon" id="home">
   <header id="header" class="_header"></header>
+  <main id="main" class="_main"></main>
   <footer id="footer" class="_footer"></footer>
 
+  <script type="module" src="./config/src/module/header/main.tsx"></script>
   <script type="module" src="./config/src/module/footer/main.tsx"></script>
+  <script type="module" src="./config/src/module/pages/soon/main.tsx"></script>
 
+  <script type="module" crossorigin src="/config/public/script/global.js"></script>
 </body>
 </html>

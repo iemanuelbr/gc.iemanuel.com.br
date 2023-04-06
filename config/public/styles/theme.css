@@ -1,0 +1,232 @@
+/* TODO: Global Configs */
+.gc h1 {
+  font: var(--gc-h1);
+}
+
+.gc h2 {
+  font: var(--gc-h2);
+}
+
+.gc h3 {
+  font: var(--gc-h3);
+}
+
+.gc h4 {
+  font: var(--gc-h4);
+}
+
+.gc h5 {
+  font: var(--gc-h5);
+}
+
+.gc h6 {
+  font: var(--gc-h6);
+}
+
+.gc p,
+.gc a,
+.gc li,
+.gc span,
+.gc ul,
+.gc button {
+  font: var(--gc-text);
+}
+
+/* TODO: Global */
+.gc ._header,
+.gc ._footer {
+  background-color: var(--gc-bg02);
+}
+
+.gc ._header ._six,
+.gc ._header ._sob,
+.gc ._footer ._six,
+.gc ._footer ._sub {
+  padding: 0.8rem 1rem;
+}
+
+/** Header */
+.gc ._header ._six {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gc ._header h1 {
+  font: var(--gc-h1);
+}
+
+.gc ._header h1 b {
+  font-family: "Overpass";
+  color: var(--gc-color03);
+}
+
+.gc ._header ._six nav {
+  font: var(--gc-h6);
+
+  display: none;
+}
+
+.gc ._header ._six button {
+  font-size: 2rem;
+}
+
+.gc ._header ._six button:hover,
+.gc ._menu header button:hover {
+  transition: all 0.5s;
+  color: var(--gc-color03);
+}
+
+.gc ._header ._six button:focus-visible,
+.gc ._menu header button:focus-visible {
+  outline: 2px dotted var(--gc-color03);
+  color: var(--gc-color03);
+}
+
+/* TODO: O menu por ser um Modal fica fora da seção do Header, assim so usando o prefixo global da pagina e suas classes. */
+.gc ._menu {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--gc-bg01);
+
+  display: grid;
+  place-content: center;
+}
+
+.gc ._menu header {
+  position: absolute;
+  margin-top: 5rem;
+
+  font-size: 2rem;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gc ._menu ._burge {
+  display: grid;
+  place-content: center;
+
+  text-align: center;
+  font: var(--gc-h6);
+
+  gap: 2.5rem;
+}
+
+/** SobHeader */
+.gc ._header ._sob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: var(--gc-system);
+}
+
+.gc ._header ._sob nav {
+  display: none;
+}
+
+.gc ._header ._sob a:hover {
+  transition: all 0.5s;
+  color: var(--gc-color03);
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gc ._header ._sob a:focus-visible {
+  outline: 2px dotted var(--gc-color03);
+  color: var(--gc-color03);
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/** SubFooter */
+.gc ._footer ._sub {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 1.5rem;
+
+  text-align: center;
+  font: var(--gc-system);
+}
+
+.gc ._footer ._sub span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* TODO: Global Padding */
+  .gc ._header ._six,
+  .gc ._header ._sob,
+  .gc ._footer ._six,
+  .gc ._footer ._sub {
+    padding: 1rem 0.8rem;
+  }
+
+  /** Header */
+  .gc ._header ._six nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    gap: 1rem;
+  }
+
+  .gc ._header button {
+    display: none;
+  }
+
+  /** SobHeader */
+  .gc ._header ._sob {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gc ._header ._sob nav {
+    display: flex;
+    align-self: center;
+    justify-content: start;
+
+    gap: 1rem;
+  }
+
+  /** SubFooter */
+  .gc ._footer ._sub {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* TODO: Global Padding */
+  .gc ._header ._six,
+  .gc ._header ._sob,
+  .gc ._footer ._six,
+  .gc ._footer ._sub {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* TODO: Global Padding */
+  .gc ._header ._six,
+  .gc ._header ._sob,
+  .gc ._footer ._six,
+  .gc ._footer ._sub {
+    padding: 0.8rem 5rem;
+  }
+}

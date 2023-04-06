@@ -1,0 +1,81 @@
+.gc ._body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.gc ._main {
+  display: grid;
+  place-content: center;
+
+  text-align: center;
+
+  gap: 1.5rem;
+}
+
+.gc ._main h2 {
+  font: var(--gc-h2);
+  font-weight: 800;
+
+  background: -webkit-linear-gradient(#3bf686, #4ca9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gc ._soon ._letter {
+  display: grid;
+  place-content: center;
+  gap: 0.8rem;
+}
+
+.gc ._soon ._letter label {
+  border: 2px solid var(--gc-color10);
+  border-radius: 5px;
+
+  background-color: var(--gc-bg02);
+
+  padding: 0.5rem 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+.gc ._soon ._letter svg {
+  color: var(--gc-color03);
+  font-size: 1.2rem;
+}
+
+.gc ._soon ._letter input {
+  background-color: transparent;
+
+  font: var(--gc-system);
+}
+
+.gc ._soon ._letter button {
+  border: 2px solid var(--gc-color03);
+  border-radius: 5px;
+
+  padding: 0.5rem 0.9rem;
+
+  font-weight: bold;
+}
+
+.gc ._soon ._letter button:hover {
+  transition: all .5s;
+
+  background-color: var(--gc-color03);
+  color: var(--gc-color02);
+}
+
+.gc ._soon ._letter button:focus-visible {
+  background-color: var(--gc-color03);
+  color: var(--gc-color02);
+
+  outline: 2px dotted var(--gc-color03);
+}

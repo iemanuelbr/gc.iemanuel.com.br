@@ -1,0 +1,51 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap"; 
+
+:root {  
+  --cfw-button: #6b77e5;
+  --cfw-foccus: #fae69e;
+  --cfw-background: #09090a;
+  --cfw-divisor: #636363;
+  --cfw-graylight: #939393;
+  --cfw-subheader: 400 0.875rem "Inter", Arial, sans-serif;
+}
+
+.gc ._powered {
+  font: var(--cfw-subheader);
+  color: var(--cfw-graylight);
+  background-color: var(--cfw-background);
+  padding: 0.8rem;
+  border-top: 2px solid var(--cfw-divisor);
+
+  user-select: none;
+}
+
+.gc ._powered span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.gc ._poweredby {
+  text-underline-offset: 3px;
+  color: var(--cfw-graylight);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.gc ._poweredby img {
+  width: 1.2rem;
+}
+
+.gc ._poweredby:hover {
+  transition: all 0.5s;
+  color: var(--cfw-button);
+
+  text-decoration: underline;
+}
+
+.gc ._poweredby:focus-visible {
+  outline: 2px dotted var(--cfw-foccus);
+  color: var(--cfw-button);
+}
