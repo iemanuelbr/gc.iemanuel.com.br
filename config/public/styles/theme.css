@@ -23,26 +23,68 @@
   font: var(--gc-h6);
 }
 
-.gc p,
-.gc a,
-.gc li,
-.gc span,
-.gc ul,
-.gc button {
-  font: var(--gc-text);
-}
-
 /* TODO: Global */
 .gc ._header,
 .gc ._footer {
   background-color: var(--gc-bg02);
+  font: var(--gc-system);
+
+  user-select: none;
 }
 
 .gc ._header ._six,
 .gc ._header ._sob,
 .gc ._footer ._six,
-.gc ._footer ._sub {
+.gc ._footer ._sub,
+.gc ._err ._main {
   padding: 0.8rem 1rem;
+}
+
+/* TODO: Presets prontos e utilizados muito. */
+/* * Preset's 001 - Link Hover */
+
+.gc .preset001 {
+  position: relative;
+
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gc .preset001:hover {
+  transition: all 0.5s;
+  color: var(--gc-color03);
+}
+
+.gc .preset001:focus-visible {
+  outline: 2px dotted var(--gc-color03);
+  color: var(--gc-color03);
+}
+
+.gc .preset001::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 1px;
+
+  bottom: -2px;
+  left: 0;
+
+  background-color: var(--gc-color03);
+  color: var(--gc-color03);
+
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.gc .preset001:hover::before,
+.gc .preset001:focus-visible::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /** Header */
@@ -117,6 +159,15 @@
   gap: 2.5rem;
 }
 
+/** Body */
+.gc ._body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
 /** SobHeader */
 .gc ._header ._sob {
   display: flex;
@@ -152,7 +203,6 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-
 
   gap: 1.5rem;
 

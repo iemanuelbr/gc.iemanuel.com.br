@@ -7,7 +7,7 @@ export function Copyright() {
       <p>© 2023 IME - Deus Conosco!</p>
       <span>
         <GitBranch />
-        B1.0.1
+        B1.0.2
       </span>
     </div>
   );
