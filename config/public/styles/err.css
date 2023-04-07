@@ -1,0 +1,51 @@
+.gc ._err ._Q2wZtimF {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.gc ._err ._Q2wZtimF h2 {
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 5rem;
+}
+
+.gc ._err ._Q2wZtimF nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gc ._err ._Q2wZtimF a {
+  border: 2px solid var(--gc-color03);
+  border-radius: 0.5rem;
+  padding: 1rem 1.8rem;
+  font-weight: 500;
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.gc ._err ._Q2wZtimF a:hover {
+  transition: 0.5s;
+  background-color: var(--gc-color03);
+  color: var(--gc-color02);
+}
+
+.gc ._err ._Q2wZtimF a:focus-visible {
+  outline: 2px dotted var(--gc-color03);
+
+  background-color: var(--gc-color03);
+  color: var(--gc-color03);
+}
+
+@media screen and (min-width: 768px) {
+  .gc ._err ._Q2wZtimF nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

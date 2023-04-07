@@ -1,29 +1,11 @@
-.gc ._main {
-  display: grid;
-  place-content: center;
-
-  text-align: center;
-
-  gap: 1.5rem;
-}
-
-.gc ._main h2 {
-  font: var(--gc-h2);
-  font-weight: 800;
-
-  background: -webkit-linear-gradient(#3bf686, #4ca9ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gc ._soon ._letter {
+.gc ._contact ._letter,
+.gc ._contact ._letter section {
   display: grid;
   place-content: center;
   gap: 0.8rem;
 }
 
-.gc ._soon ._letter div {
+.gc ._contact ._letter div {
   border: 2px solid var(--gc-color10);
   border-radius: 5px;
 
@@ -38,18 +20,33 @@
   gap: 0.5rem;
 }
 
-.gc ._soon ._letter svg {
+.gc ._contact ._letter ._text {
+  padding: 0;
+}
+
+.gc ._contact ._letter svg {
   color: var(--gc-color03);
   font-size: 1.2rem;
 }
 
-.gc ._soon ._letter input {
+.gc ._contact ._letter input,
+.gc ._contact ._letter textarea {
   background-color: transparent;
 
   font: var(--gc-system);
 }
 
-.gc ._soon ._letter button {
+.gc ._contact ._letter textarea {
+  padding: 0.5rem 0.9rem;
+  width: -webkit-fill-available;
+
+  resize: none;
+
+
+height: 10rem;
+}
+
+.gc ._contact ._letter button {
   border: 2px solid var(--gc-color03);
   border-radius: 5px;
 
@@ -58,14 +55,14 @@
   font-weight: bold;
 }
 
-.gc ._soon ._letter button:hover {
+.gc ._contact ._letter button:hover {
   transition: all .5s;
 
   background-color: var(--gc-color03);
   color: var(--gc-color02);
 }
 
-.gc ._soon ._letter button:focus-visible {
+.gc ._contact ._letter button:focus-visible {
   background-color: var(--gc-color03);
   color: var(--gc-color02);
 
