@@ -51,6 +51,7 @@ export function Header() {
                   href={value.local}
                   title={value.alt}
                   target="_blank"
+                  className="preset001"
                   rel="noopener noreferrer"
                 >
                   {value.title}
@@ -79,6 +80,7 @@ export function Header() {
                       href={value.local}
                       title={value.alt}
                       target="_blank"
+                      className="preset001"
                       rel="noopener noreferrer"
                     >
                       {value.title}
